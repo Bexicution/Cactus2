@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GKQ-Eb-KWc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="U2G-2o-xmc">
+            <objects>
+                <viewController id="GKQ-Eb-KWc" customClass="OnboardingViewController" customModule="Cactus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eYA-Y6-fKM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-tx-fyS">
+                                <rect key="frame" x="127" y="620" width="151" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TappedButtonx" destination="GKQ-Eb-KWc" eventType="touchUpInside" id="ZVT-6y-9Tc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.96862745098039216" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oPx-Af-iyk"/>
+                    </view>
+                    <connections>
+                        <outlet property="TappedButton" destination="H6W-tx-fyS" id="an3-eT-MFK"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSession" id="szk-If-Gwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJB-z6-wLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-975.36231884057975" y="116.51785714285714"/>
+        </scene>
+        <!--Session View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SessionViewController" customModule="Cactus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start planting today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-BF-fV8">
+                                <rect key="frame" x="16" y="68" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.1764705882352941" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cactus_1" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-4g-Q9W">
+                                <rect key="frame" x="100.5" y="145" width="213" height="213"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="1jl-Tm-GVI"/>
+                                    <constraint firstAttribute="height" constant="213" id="Gks-dS-XNz"/>
+                                    <constraint firstAttribute="width" secondItem="JBD-4g-Q9W" secondAttribute="height" multiplier="1:1" id="OBI-9z-cHb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2s-Sh-Ckj">
+                                <rect key="frame" x="35" y="606" width="344" height="56"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="MJX-Zl-3kk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="344" id="OHB-vx-NYh"/>
+                                    <constraint firstAttribute="height" constant="56" id="ZaR-f8-X5n"/>
+                                    <constraint firstAttribute="width" constant="344" id="oa5-4o-BB7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Plant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TappedPlantButtonx" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xM-Xs-ATv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcR-fK-3Bl">
+                                <rect key="frame" x="169" y="418" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBb-pS-r4M">
+                                <rect key="frame" x="150.5" y="398" width="113" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Le-rv-obt"/>
+                                    <constraint firstAttribute="width" constant="113" id="Ceg-fv-r2F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="iLZ-gG-4ec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ3-xz-l9w">
+                                <rect key="frame" x="157" y="382" width="100" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ESV-V3-Pqw"/>
+                                </constraints>
+                            </pickerView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPg-5y-s4B">
+                                <rect key="frame" x="35.5" y="482" width="343" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="71V-qj-fZW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="7th-9O-f6j"/>
+                                    <constraint firstAttribute="height" constant="56" id="nV6-XR-Q2b"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="rDj-En-ALJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Give Up">
+                                    <color key="titleColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGiveUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDg-Lu-H9g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.96862745098039216" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JBD-4g-Q9W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Oi-Bm-1Qv"/>
+                            <constraint firstItem="yJ3-xz-l9w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5WB-7w-fQe"/>
+                            <constraint firstItem="VPg-5y-s4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7qM-3I-2XO"/>
+                            <constraint firstItem="JBD-4g-Q9W" firstAttribute="top" secondItem="5uh-BF-fV8" secondAttribute="bottom" constant="56" id="EC8-jp-XQX"/>
+                            <constraint firstItem="yJ3-xz-l9w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jes-sm-PMP"/>
+                            <constraint firstItem="5uh-BF-fV8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="QPH-ma-nMv"/>
+                            <constraint firstItem="FBb-pS-r4M" firstAttribute="top" secondItem="JBD-4g-Q9W" secondAttribute="bottom" constant="40" id="XyT-tp-m0O"/>
+                            <constraint firstItem="D2s-Sh-Ckj" firstAttribute="top" secondItem="yJ3-xz-l9w" secondAttribute="bottom" constant="8" id="agh-UL-USh"/>
+                            <constraint firstItem="5uh-BF-fV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d6w-yZ-d2o"/>
+                            <constraint firstItem="FBb-pS-r4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m4I-i2-LHB"/>
+                            <constraint firstItem="JBD-4g-Q9W" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="mqx-Ez-AGH"/>
+                            <constraint firstItem="D2s-Sh-Ckj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUd-fY-UuG"/>
+                            <constraint firstItem="yJ3-xz-l9w" firstAttribute="top" secondItem="JBD-4g-Q9W" secondAttribute="bottom" constant="24" id="oVI-zh-QfC"/>
+                            <constraint firstItem="VPg-5y-s4B" firstAttribute="top" secondItem="FBb-pS-r4M" secondAttribute="bottom" constant="24" id="rfn-yL-r36"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PlantButton" destination="D2s-Sh-Ckj" id="uMT-gR-jZK"/>
+                        <outlet property="cactusImageView" destination="JBD-4g-Q9W" id="dWv-wo-lF9"/>
+                        <outlet property="countdownLabel" destination="FBb-pS-r4M" id="jPN-93-OI9"/>
+                        <outlet property="giveUpButton" destination="VPg-5y-s4B" id="L4g-kk-AAj"/>
+                        <outlet property="pickerView" destination="yJ3-xz-l9w" id="Cz9-8b-y2z"/>
+                        <segue destination="i8Y-UU-7F7" kind="presentation" identifier="showHurray" id="7HC-Fi-GnH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+        <!--Break View Controller-->
+        <scene sceneID="ivu-x1-drb">
+            <objects>
+                <viewController id="i8Y-UU-7F7" customClass="BreakViewController" customModule="Cactus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2G7-pL-SQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've planted a cactus!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPZ-iS-QHq">
+                                <rect key="frame" x="142" y="33" width="131" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hurray!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAP-up-FzA">
+                                <rect key="frame" x="177" y="63" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-16-mMf">
+                                <rect key="frame" x="32" y="33" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sample"/>
+                                <connections>
+                                    <action selector="CloseButton" destination="i8Y-UU-7F7" eventType="touchUpInside" id="8ih-gk-nOh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgb-en-axh">
+                                <rect key="frame" x="35" y="635" width="344" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Take a break">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TakeBreak" destination="i8Y-UU-7F7" eventType="touchUpInside" id="hDA-qo-OFV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cactus_1" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-Tt-va2">
+                                <rect key="frame" x="101" y="119" width="213" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-30-1BR">
+                                <rect key="frame" x="66" y="354" width="283" height="198"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01:24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRR-pa-VqS">
+                                <rect key="frame" x="35" y="443" width="344" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCH-Ry-jaD">
+                                <rect key="frame" x="35" y="546" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Finish break">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishButtonAction" destination="i8Y-UU-7F7" eventType="touchUpInside" id="azW-rc-bpF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.96862745098039216" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0CN-8Z-euQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="CactusImage" destination="7pk-Tt-va2" id="onr-Yh-r67"/>
+                        <outlet property="closeButton" destination="1FE-16-mMf" id="Tb7-p5-J80"/>
+                        <outlet property="countdownLabel" destination="kRR-pa-VqS" id="eTf-4c-HJd"/>
+                        <outlet property="finishButton" destination="lCH-Ry-jaD" id="HcX-f9-AV9"/>
+                        <outlet property="pickerView" destination="qhj-30-1BR" id="tgt-r7-oBD"/>
+                        <outlet property="takeBreakRef" destination="Qgb-en-axh" id="mXB-t1-lt3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dC3-gF-dkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cactus_1" width="682" height="1024"/>
+        <image name="sample" width="25" height="25"/>
+        <namedColor name="TextColor">
+            <color red="0.19200000166893005" green="0.17599999904632568" blue="0.16500000655651093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.15999999642372131" green="0.42399999499320984" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
