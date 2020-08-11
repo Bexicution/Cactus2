@@ -10,14 +10,22 @@
 		0408746424D85F0D00C5E97F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408746324D85F0D00C5E97F /* AppDelegate.swift */; };
 		0408746824D85F0D00C5E97F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408746724D85F0D00C5E97F /* SessionViewController.swift */; };
 		0408746B24D85F0D00C5E97F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408746924D85F0D00C5E97F /* Main.storyboard */; };
-		0408746D24D85F1500C5E97F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0408746C24D85F1500C5E97F /* Assets.xcassets */; };
 		0408747024D85F1500C5E97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408746E24D85F1500C5E97F /* LaunchScreen.storyboard */; };
 		0408747A24D8914800C5E97F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408747924D8914800C5E97F /* OnboardingViewController.swift */; };
 		0408747E24D8B1C700C5E97F /* BreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408747D24D8B1C700C5E97F /* BreakViewController.swift */; };
+		041EAF2E24DE411200E8074B /* CactusTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EAF2D24DE411200E8074B /* CactusTabBarController.swift */; };
+		041EAF3524DE483400E8074B /* SessionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EAF3424DE483400E8074B /* SessionsListViewController.swift */; };
+		041EAF3924DE4E5400E8074B /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EAF3824DE4E5400E8074B /* SessionsStorage.swift */; };
+		041EAF3B24DE9F5B00E8074B /* SessionsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EAF3A24DE9F5B00E8074B /* SessionsListTableViewCell.swift */; };
 		0456E8EB24D9EA43006DC0EC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E8EA24D9EA43006DC0EC /* Session.swift */; };
 		0456E8ED24D9ED78006DC0EC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E8EC24D9ED78006DC0EC /* SessionManager.swift */; };
 		04800C9424DAA8CD00B847BC /* BreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800C9324DAA8CD00B847BC /* BreakManager.swift */; };
 		04800C9624DAA9B300B847BC /* Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800C9524DAA9B300B847BC /* Break.swift */; };
+		048B08FD24E1DC7A00F78EB3 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B08FC24E1DC7A00F78EB3 /* LearnViewController.swift */; };
+		048B090024E1E2EC00F78EB3 /*  Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048B08FF24E1E2EC00F78EB3 /*  Images.xcassets */; };
+		048B090324E1E47700F78EB3 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B090224E1E47700F78EB3 /* ArticleCollectionViewCell.swift */; };
+		04C0E4F524E270E50071F52E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E4F424E270E50071F52E /* Article.swift */; };
+		04C0E4F724E271310071F52E /* ArticleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E4F624E271310071F52E /* ArticleStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +33,23 @@
 		0408746324D85F0D00C5E97F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0408746724D85F0D00C5E97F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionViewController.swift; path = ../SessionViewController.swift; sourceTree = "<group>"; };
 		0408746A24D85F0D00C5E97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0408746C24D85F1500C5E97F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0408746F24D85F1500C5E97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0408747124D85F1500C5E97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0408747924D8914800C5E97F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		0408747D24D8B1C700C5E97F /* BreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakViewController.swift; sourceTree = "<group>"; };
+		041EAF2D24DE411200E8074B /* CactusTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CactusTabBarController.swift; sourceTree = "<group>"; };
+		041EAF3424DE483400E8074B /* SessionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListViewController.swift; sourceTree = "<group>"; };
+		041EAF3824DE4E5400E8074B /* SessionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsStorage.swift; sourceTree = "<group>"; };
+		041EAF3A24DE9F5B00E8074B /* SessionsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListTableViewCell.swift; sourceTree = "<group>"; };
 		0456E8EA24D9EA43006DC0EC /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0456E8EC24D9ED78006DC0EC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		04800C9324DAA8CD00B847BC /* BreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakManager.swift; sourceTree = "<group>"; };
 		04800C9524DAA9B300B847BC /* Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break.swift; sourceTree = "<group>"; };
+		048B08FC24E1DC7A00F78EB3 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		048B08FF24E1E2EC00F78EB3 /*  Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = " Images.xcassets"; sourceTree = "<group>"; };
+		048B090224E1E47700F78EB3 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		04C0E4F424E270E50071F52E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		04C0E4F624E271310071F52E /* ArticleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +82,36 @@
 		0408746224D85F0D00C5E97F /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
+				048B08FB24E1DC4100F78EB3 /* Learn */,
+				041EAF3124DE47D200E8074B /* SessionsList */,
+				041EAF2C24DE407400E8074B /* TabBarController */,
 				0456E8E724D9E868006DC0EC /* Session */,
 				0408746324D85F0D00C5E97F /* AppDelegate.swift */,
 				0408746924D85F0D00C5E97F /* Main.storyboard */,
-				0408746C24D85F1500C5E97F /* Assets.xcassets */,
 				0408746E24D85F1500C5E97F /* LaunchScreen.storyboard */,
 				0408747124D85F1500C5E97F /* Info.plist */,
 				0408747924D8914800C5E97F /* OnboardingViewController.swift */,
+				048B08FF24E1E2EC00F78EB3 /*  Images.xcassets */,
 			);
 			path = Cactus;
+			sourceTree = "<group>";
+		};
+		041EAF2C24DE407400E8074B /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				041EAF2D24DE411200E8074B /* CactusTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		041EAF3124DE47D200E8074B /* SessionsList */ = {
+			isa = PBXGroup;
+			children = (
+				041EAF3424DE483400E8074B /* SessionsListViewController.swift */,
+				041EAF3824DE4E5400E8074B /* SessionsStorage.swift */,
+				041EAF3A24DE9F5B00E8074B /* SessionsListTableViewCell.swift */,
+			);
+			path = SessionsList;
 			sourceTree = "<group>";
 		};
 		0456E8E724D9E868006DC0EC /* Session */ = {
@@ -104,6 +141,33 @@
 				0408747D24D8B1C700C5E97F /* BreakViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		048B08FB24E1DC4100F78EB3 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E4F324E270D40071F52E /*  Model */,
+				048B090124E1E45700F78EB3 /* View */,
+				048B08FC24E1DC7A00F78EB3 /* LearnViewController.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		048B090124E1E45700F78EB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				048B090224E1E47700F78EB3 /* ArticleCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C0E4F324E270D40071F52E /*  Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E4F424E270E50071F52E /* Article.swift */,
+				04C0E4F624E271310071F52E /* ArticleStorage.swift */,
+			);
+			path = " Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408747024D85F1500C5E97F /* LaunchScreen.storyboard in Resources */,
-				0408746D24D85F1500C5E97F /* Assets.xcassets in Resources */,
+				048B090024E1E2EC00F78EB3 /*  Images.xcassets in Resources */,
 				0408746B24D85F0D00C5E97F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,9 +246,17 @@
 				04800C9424DAA8CD00B847BC /* BreakManager.swift in Sources */,
 				04800C9624DAA9B300B847BC /* Break.swift in Sources */,
 				0456E8ED24D9ED78006DC0EC /* SessionManager.swift in Sources */,
+				048B08FD24E1DC7A00F78EB3 /* LearnViewController.swift in Sources */,
 				0408746824D85F0D00C5E97F /* SessionViewController.swift in Sources */,
+				041EAF3924DE4E5400E8074B /* SessionsStorage.swift in Sources */,
+				04C0E4F724E271310071F52E /* ArticleStorage.swift in Sources */,
+				041EAF3524DE483400E8074B /* SessionsListViewController.swift in Sources */,
+				041EAF3B24DE9F5B00E8074B /* SessionsListTableViewCell.swift in Sources */,
 				0408747A24D8914800C5E97F /* OnboardingViewController.swift in Sources */,
 				0408746424D85F0D00C5E97F /* AppDelegate.swift in Sources */,
+				041EAF2E24DE411200E8074B /* CactusTabBarController.swift in Sources */,
+				048B090324E1E47700F78EB3 /* ArticleCollectionViewCell.swift in Sources */,
+				04C0E4F524E270E50071F52E /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

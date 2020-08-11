@@ -42,7 +42,7 @@ class SessionViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBAction func TappedPlantButtonx() {
         let selectedPickerRow = pickerView.selectedRow(inComponent: 0)
         let selectedDuration = durations[selectedPickerRow]//*60
-        sessionManager.startSession(session: Session(durationInSeconds: selectedDuration))
+        sessionManager.startSession(session: Session(durationInSeconds: selectedDuration, startDate: Date()))
     }
     
     let durations =  [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]

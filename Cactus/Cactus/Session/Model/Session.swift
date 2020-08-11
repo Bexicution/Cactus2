@@ -9,8 +9,10 @@
 import Foundation
  class Session {
      let durationInSeconds: Int
-     init(durationInSeconds: Int) {
+     let startDate: Date
+     init(durationInSeconds: Int, startDate: Date) {
          self.durationInSeconds = durationInSeconds
+         self.startDate = startDate
      }
  }
 

@@ -4,7 +4,6 @@
 //
 //  Created by Mac on 8/5/20.
 //  Copyright © 2020 Bex. All rights reserved.
-//
 
 import Foundation
 protocol SessionManagerDelegate {
@@ -16,6 +15,7 @@ protocol SessionManagerDelegate {
 class SessionManager {
     var sessionDelegate: SessionManagerDelegate
     var timer: Timer?
+    // var sessionsDelegate = Session()
     init(sessionDelegate: SessionManagerDelegate) {
         self.sessionDelegate = sessionDelegate
     }
@@ -29,7 +29,7 @@ class SessionManager {
             secondsLeft -= 1
             self.sessionDelegate.showTimeLeft(secondsLeft: secondsLeft)
             if secondsLeft == 0 {
-                //    SessionsStorage.shared.add(session: session)
+                SessionsStorage.shared.add(session)
                 self.sessionDelegate.showSessionEnded(session: session)
                 
                 self.timer?.invalidate()
