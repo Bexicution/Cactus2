@@ -88,5 +88,8 @@ class SessionViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
     }
     
+    @IBAction func didTapCactusImageView(_ sender: Any) {
+        performSegue(withIdentifier: "cactusShop", sender: nil)
+    }
 }
 
